@@ -14,18 +14,19 @@
     }
 
     #chat-container {
-      width: 100%;
-      height: 100%;
+      width: 30vw; /* 30% de la largeur de l'écran */
+      height: 30vh; /* 30% de la hauteur de l'écran */
       overflow: hidden;
+      position: absolute;
+      top: 0; /* Positionne le chat dans le coin supérieur gauche */
+      left: 0;
     }
 
     iframe {
       width: 100%;
       height: 100%;
       border: none;
-      overflow-wrap: break-word; /* Retours à la ligne pour mots longs */
-      word-wrap: break-word;
-      word-break: break-word;
+      transform-origin: top left; /* Origine de l'échelle en haut à gauche */
     }
   </style>
 </head>
