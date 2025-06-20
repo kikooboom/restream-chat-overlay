@@ -2,33 +2,37 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Chat Restream Mini</title>
+  <title>Chat Restream Redimensionné</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background: transparent;
-      overflow: hidden;
       width: 100%;
       height: 100%;
+      background: transparent;
+      overflow: hidden;
     }
 
     #chat-container {
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
 
     iframe {
       width: 100%;
       height: 100%;
       border: none;
+      overflow-wrap: break-word; /* Retours à la ligne pour mots longs */
+      word-wrap: break-word;
+      word-break: break-word;
     }
   </style>
 </head>
 <body>
   <div id="chat-container">
     <iframe 
-      src="https://chat.restream.io/embed?token=5fa9b42b-3698-4914-9f1e-927fc5845c43&twitch-only=true" 
+      src="https://chat.restream.io/embed?token=5fa9b42b-3698-4914-9f1e-927fc5845c43&twitch-only=true&transparent=true" 
       allowtransparency="true">
     </iframe>
   </div>
